@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistem Manajemen Siswa</title>
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .hero{
+           background-image:url("https://images.unsplash.com/photo-1523240795612-9a054b0db644");
+           background-size: cover;
+           background-position: center;
+        }
+        .overlay{
+            background-color: rgba(0, 0, 0, 0.5);
+            min-height: 70vh;
+        }
+        .custom-border th,
+        .custom-border td{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+
+<div class="hero">
+    <div class="overlay d-flex justify-content-center align-items-center text-center">
+        <div class="text-white">
+            <h1 class="display-5 fw-bold mt-5">Sistem Manajemen Siswa</h1>
+            <p class="fs-4">Mengolah data siswa menjadi lebih mudah.</p>
+            <button class="btn btn-primary btn-lg">Simpan</button>
+            <button class="btn btn-outline-info">Di bawah tabel</button>
+        </div>
+    </div>
+</div>
+
+<br>
+<h1 class="text-center">Tabel Data Siswa</h1>
+<br>
+
+<table class="table table-striped table-bordered custom-border table-hover">
+    <thead class="align-middle text-center">
+        <tr>
+            <th>No</th>
+            <th>Nama</th>
+            <th>Foto Siswa</th>
+            <th>Kelas</th>
+            <th>Keterangan</th>
+            <th>Aksi</th>
+        </tr>
+    </thead>
+    <tbody class="align-middle text-center">
+        <tr>
+            <td>1.</td>
+            <td>Nepi</td>
+            <td>
+                <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Malik" width="80" class="rounded-circle bg-light">
+            </td>
+            <td>X PPLG 2</td>
+            <td><span class="badge bg-success">Aktif</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+        </tr>
+        <tr>
+            <td>2.</td>
+            <td>Apin</td>
+            <td>
+                <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Edo" width="80" class="rounded-circle bg-light">
+            </td>
+            <td>X PPLG 2</td>
+            <td><span class="badge bg-warning">Izin</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+        </tr>
+        <tr>
+            <td>3.</td>
+            <td>Dewi</td>
+            <td>
+                <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Edward" width="80" class="rounded-circle bg-light">
+            </td>
+            <td>X PPLG 4</td>
+            <td><span class="badge bg-danger">Alfa</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+        </tr>
+        <tr>
+            <td>4.</td>
+            <td>Evi</td>
+            <td>
+                <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Jojo" width="80" class="rounded-circle bg-light">
+            </td>
+            <td>X PPLG 3</td>
+            <td><span class="badge bg-success">Aktif</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+        </tr>
+        <tr>
+            <td>5.</td>
+            <td>Ijat</td>
+            <td>
+                <img src="https://api.dicebear.com/7.x/adventurer/svg?seed=Bima" width="80" class="rounded-circle bg-light">
+            </td>
+            <td>X PPLG 1</td>
+            <td><span class="badge bg-danger">Alfa</span></td>
+            <td>
+                <button class="btn btn-warning">Edit</button>
+                <button class="btn btn-danger btn-sm">Hapus</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
